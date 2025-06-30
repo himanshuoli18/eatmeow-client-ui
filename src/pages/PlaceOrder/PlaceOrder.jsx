@@ -56,7 +56,7 @@ const PlaceOrder = () => {
         }
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/orders/create',
+                'https://eatmeow-api-production.up.railway.app/api/orders/create',
                 orderData,
                 {headers:{"Authorization": `Bearer ${token}`}}
             )
@@ -106,7 +106,7 @@ const PlaceOrder = () => {
         }
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/orders/verify',
+                'https://eatmeow-api-production.up.railway.app/api/orders/verify',
                 paymentData,
                 {headers: {'Authorization' : `Bearer ${token}`}}
             )
@@ -126,7 +126,7 @@ const PlaceOrder = () => {
     const deleteOrder = async(orderId) => {
         try {
             await axios.delete(
-                'http://localhost:8080/api/orders/'+orderId,
+                'https://eatmeow-api-production.up.railway.app/api/orders/'+orderId,
                 {headers: {"Authorization" : `Bearer ${token}`}}
             )
         } catch {
@@ -136,7 +136,7 @@ const PlaceOrder = () => {
     const clearCart = async() => {
         try {
             await axios.delete(
-                'http://localhost:8080/api/cart',
+                'https://eatmeow-api-production.up.railway.app/api/cart',
                 {headers: {"Authorization" : `Bearer ${token}`}}
             )
             setQuantities({})

@@ -11,7 +11,7 @@ const MyOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/orders', {
+      const response = await axios.get('https://eatmeow-api-production.up.railway.app/api/orders', {
         headers: { Authorization: `Bearer ${token}` }
       });
       const sortedOrders = response.data.sort(

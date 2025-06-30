@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/cart";
+const API_URL = "https://eatmeow-api-production.up.railway.app/api/cart";
 
 // Helper to generate Authorization header
 const getAuthHeader = (token) => ({
