@@ -1,0 +1,21 @@
+.status-badge {
+    color: white;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+  }
+  
+  .status-preparing {
+    background-color: #8e9aaf; /* warm gray */
+  }
+  
+  .status-out-for-delivery {
+    background-color: #9c95fc; /* soft violet */
+  }
+  
+  .status-delivered {
+    background-color: #00b894; /* muted teal */
+  }
+  

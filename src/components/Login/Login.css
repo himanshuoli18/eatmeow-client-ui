@@ -1,0 +1,59 @@
+.auth-page {
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  
+  .auth-card {
+    width: 80vw;
+    height: 75vh;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .auth-image {
+    flex: 3;
+    background-image: url('../../assets/login.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .auth-form {
+    flex: 2;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .btn-auth {
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-auth:hover {
+    background-color: #0b5ed7;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-card {
+      flex-direction: column;
+      width: 95vw;
+      height: auto;
+    }
+  
+    .auth-image {
+      display: none;
+    }
+  }
+  
