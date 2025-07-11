@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL='https://eatmeow-api-production.up.railway.app/api/foods'
+const API_URL='https://eatmeow-api.onrender.com/api/foods'
 
 export const fetchFoodList = async () => {
     try {
