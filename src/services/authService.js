@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'https://eatmeow-api-production.up.railway.app/api';
+const API_URL = 'https://eatmeow-api.onrender.com/api';
 
 export const registerUser = async (data) => {
   return axios.post(`${API_URL}/register`, data)
